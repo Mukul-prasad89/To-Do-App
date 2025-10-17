@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Tasks - Taskify</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="nav-links">
+          <li><a class="tasklogout" href="/">Logout</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="dashboard-container">
+      <section class="welcome-header">
+        <h1>Hello, <span id="username">User</span>!</h1>
+        <p style="font-weight: 500">
+          Welcome to your dashboard. Let's get things done.
+        </p>
+      </section>
+
+      <section class="add-task-section">
+        <form class="form" id="taskForm">
+          <div class="div">
+            <input
+              type="text"
+              id="taskInput"
+              placeholder="Enter a new task..."
+              required
+            />
+            <button type="submit" id="addTaskButton">Add Task</button> 
+          </div>
+        </form>
+      </section>
+      
+      <section class="task-list-container">
+        <div class="task-list-header">
+          <h2>Your Tasks</h2>
+          <div class="task-count">Total: <span id="taskCount">0</span></div>
+        </div>
+        <ul class="task-list" id="taskList">
+          <!-- Tasks will be added here dynamically -->
+          <div class="empty-state">
+            <p>You don't have any tasks yet.</p>
+            <p>Add a task above to get started!</p>
+          </div>
+        </ul>
+      </section>
+    </main>
+
+    <script src="script.js">
+     
+    </script>
+  </body>
+</html>

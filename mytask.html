@@ -16,6 +16,7 @@
     <header>
       <nav>
         <ul class="nav-links">
+          
           <li><a class="tasklogout" href="/">Logout</a></li>
         </ul>
       </nav>
@@ -38,7 +39,8 @@
               placeholder="Enter a new task..."
               required
             />
-            <button type="submit" id="addTaskButton">Add Task</button> 
+            <button type="button" id="addTaskButton">Add Task</button>
+
           </div>
         </form>
       </section>
@@ -50,16 +52,15 @@
         </div>
         <ul class="task-list" id="taskList">
           <!-- Tasks will be added here dynamically -->
-          <div class="empty-state">
-            <p>You don't have any tasks yet.</p>
-            <p>Add a task above to get started!</p>
-          </div>
+          
         </ul>
+        <div class="empty-state" id="emptyState">
+    <p>You don't have any tasks yet.</p>
+    <p>Add a task above to get started!</p>
+  </div>
       </section>
     </main>
 
-    <script src="script.js">
-     
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
